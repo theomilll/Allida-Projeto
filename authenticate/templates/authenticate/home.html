@@ -1,0 +1,159 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Html Generated</title>
+  <meta name="description" content="Figma htmlGenerator">
+  <meta name="author" content="htmlGenerator">
+  <link href="https://fonts.googleapis.com/css?family=Syne&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class=e284_14>
+      <img src="{% static 'authenticate/images/login.png' %}">
+      <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <input type="text" class="e284_3" name="username" id="username" placeholder=" Login">
+        </div>
+      <div class="e284_4"></div>
+      <div class="form-group">
+        <input type="password" class="e284_4" name="password" id="password" placeholder=" Senha">
+        </div>
+      <div class=e284_5>
+        <button type="submit" class="e284_6">
+          <span  class="e284_7 cancelar-btn">LOGIN</span>
+        </button>
+        </button>
+      </div>
+    </form>
+    <form action="{% url 'register' %}" method="POST">
+        {% csrf_token %}
+      <div class=e284_10>
+        <button class="e284_11">
+            <button type="submit" class="e284_11">
+              <span  class="e284_12 cancelar-btn">CADASTRO</span>
+            </button>
+        </button>
+      </div>
+    </div>
+</form>
+  </body>
+</html>
+<style>
+  
+  .e284_14 { 
+    width:390px;
+    height:844px;
+    position:absolute;
+    border-style: none;
+  }
+  .e253_85 { 
+    width:390px;
+    height:844px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    background-image:url(images/login.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-style: none;
+  }
+  .e284_3 { 
+    background-color:rgba(255, 255, 255, 1);
+    width:289px;
+    height:40px;
+    position:absolute;
+    left:50px;
+    top:414px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-style: none;
+  }
+  .e284_4 { 
+    background-color:rgba(255, 255, 255, 1);
+    width:289px;
+    height:40px;
+    position:absolute;
+    left:50px;
+    top:510px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-style: none;
+  }
+  .e284_5 { 
+    width:123px;
+    height:40px;
+    position:absolute;
+    left:133px;
+    top:648px;
+    border-style: none;
+  }
+  .e284_6 { 
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:rgba(240.00000089406967, 113.00000086426735, 103.0000014603138, 1);
+    width:123px;
+    height:40px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    border-style: none;
+  }
+  .e284_7 { 
+    color:rgba(255, 255, 255, 1);
+    width:49px;
+    height:18px;
+    position:absolute;
+    left:36px;
+    top:12px;
+    font-family:Syne;
+    text-align:center;
+    font-size:15px;
+    letter-spacing:0;
+  }
+  .e284_10 { 
+    width:123px;
+    height:40px;
+    position:absolute;
+    left:133px;
+    top:704px;
+    border-style: none;
+  }
+  .e284_11 { 
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:rgba(248.0000004172325, 237.0000010728836, 235.0000011920929, 1);
+    width:123px;
+    height:40px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    border-style: none;
+  }
+  .e284_12 { 
+    color:rgba(240.00000089406967, 113.00000086426735, 103.0000014603138, 1);
+    width:77px;
+    height:17px;
+    position:absolute;
+    left:24px;
+    top:12px;
+    font-family:Syne;
+    text-align:center;
+    font-size:15px;
+    letter-spacing:0;
+  }
+  
+    </style>
